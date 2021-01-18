@@ -6,10 +6,13 @@
 @import './1-base/variables.scss';
 @import './1-base/normalize.scss';
 @import './1-base/base.scss';
+@import './1-base/bootstrap-grid.css';
 @import './1-base/typography.scss';
 
 // 2 Components
 @import './2-components/basic.scss';
 @import './2-components/button.scss';
+@import './2-components/card.scss';
 
 // 3 Layout
+@import './3-layout/landing.scss';

@@ -1,0 +1,96 @@
+// ************
+// Hero section
+// ************
+.hero {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+	&-cta {
+        h1, h2 {
+            color: $blue;
+            margin: 8px 0;
+        }
+        p {
+            color: $s100;
+            margin: 16px 0;
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+	.hero {
+		text-align: center;
+		&-content {
+			h2,
+			p {
+				width: 100%;
+			}
+			a {
+				margin-bottom: 2rem;
+			}
+		}
+	}
+}
+
+// ************
+// Values section
+// ************
+.values {
+	padding: 1rem 0;
+	&-message {
+		h2 {
+			color: $orange;
+			// width: 60%;
+		}
+	}
+	&-list {
+		padding-top: 1rem;
+		h3 {
+            margin-top: 8px;
+			color: $blue;
+        }
+        p {
+            color: $s100;
+            padding: 0.5rem 0;
+		}
+	}
+}
+
+// ************
+// Recent project section
+// ************
+.projects {
+    padding: 1rem 0;
+    background-color: $light2;
+	&-message {
+		h2 {
+            color: $orange;
+            margin-bottom: 8px;
+		}
+		p {
+			color: $s100;
+		}
+	}
+	&-list {
+		padding-top: 1rem;
+	}
+}
+
+// ************
+// Contact me section
+// ************
+.cta-contact {
+    text-align: center;
+    padding: 2rem 15rem;
+    h2 {
+        color: $orange;
+    }
+    p {
+        color: $s100;
+        padding: 1rem 0;
+    }
+}
+@media (max-width: 992px) {
+    .cta-contact {
+        padding: 2rem;
+    }
+}

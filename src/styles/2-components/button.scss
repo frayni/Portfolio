@@ -1,0 +1,64 @@
+// *******
+// Basic
+// *******
+%basic-button {
+	border: none;
+	padding: 0.75rem 1rem;
+	text-align: center;
+	text-decoration: none;
+    display: inline-block;
+    margin-right: 4px;
+	transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: poppins-b, serif;
+    font-size: $lg-body;
+}
+
+%btn-icons {
+		background-color: $orange;
+		color: white;
+		font-size: $lg-body;
+		padding: 8px 12px;
+		border-radius: 100%;
+}
+
+.btn {
+	&-primary {
+		@extend %basic-button;
+		background-color: $orange;
+		color: white;
+        border-radius: 4px;
+	}
+
+	&-outline-primary {
+		@extend %basic-button;
+		background: transparent;
+		color: $orange;
+		border: 2px solid $orange;
+		border-radius: 4px;
+        padding: 0.625rem 0.875rem;
+		&:hover {
+			background-color: $orange;
+			color: white;
+		}
+	}
+	&-outline-secundary {
+		@extend %basic-button;
+		background: transparent;
+		color: $blue;
+		border: 2px solid $blue;
+		border-radius: 4px;
+        padding: 0.625rem 0.875rem;
+		&:hover {
+			background-color: $blue;
+			color: white;
+		}
+	}
+
+	&-email {
+		@extend %btn-icons;
+	}
+	&-linkedin {
+		@extend %btn-icons;
+	}
+}

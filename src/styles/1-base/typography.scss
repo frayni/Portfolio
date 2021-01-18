@@ -1,0 +1,75 @@
+// ***************
+// Typography only
+// ***************
+
+@font-face{
+    font-family: poppins-b;
+    src: url(../Fonts/Poppins-Bold.ttf); // 700 -b
+}
+
+@font-face{
+    font-family: poppins-sb;
+    src: url(../Fonts/Poppins-SemiBold.ttf); // 600 -sb
+}
+
+@font-face{
+    font-family: poppins-m;
+    src: url(../Fonts/Poppins-Medium.ttf); //  500 -m
+}
+
+@font-face{
+    font-family: poppins-r;
+    src: url(../Fonts/Poppins-Regular.ttf); // 400 -r
+}
+
+// All the body using this font
+body{
+    font-family: poppins-m, serif;
+}
+
+// Variables and Classes for typography with scale
+$title: 3rem; //48px
+$subtitle: 2rem; // 32px
+$sm-subtitle: 1.5rem; // 24px
+$lg-body: 1.125rem; // 18px
+$body: 1rem; // 16px
+$sm-body: 0.875rem; // 14px
+
+.title {
+    font-size: $title;
+    &-b {
+        @extend .title;
+        font-family: poppins-b, serif;
+    }
+    &-sb {
+        @extend .title;
+        font-family: poppins-sb, serif;
+    }
+}
+
+.subtitle {
+    font-family: poppins-sb, serif;
+    font-size: $subtitle;
+    &-sm {
+        font-family: poppins-sb, serif;
+        font-size: $sm-subtitle;
+    }
+}
+
+.body {
+    font-family: poppins-m, serif;
+    font-size: $body;
+    &-lg {
+        font-family: poppins-m, serif;
+        font-size: $lg-body;
+        line-height: 160%;
+    }
+    &-sm {
+        font-family: poppins-m, serif;
+        font-size: $sm-body;
+    }
+    &-btn {
+        font-family: poppins-b, serif;
+        font-size: $lg-body;
+    }
+}
